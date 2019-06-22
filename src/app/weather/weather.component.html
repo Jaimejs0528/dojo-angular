@@ -1,0 +1,11 @@
+<main>
+  <h2> Weather</h2>
+
+  <p *ngIf="response.main">{{ response.main.temp}}</p>
+  <div class="ctn-form">
+      <input type="text" #city>
+  </div>
+  <div class="ctn-actions">
+    <button (click)="requestWeather(city)">Get Weather</button>
+  </div>
+</main>

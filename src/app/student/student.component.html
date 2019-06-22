@@ -1,3 +1,6 @@
-<p>
-  student works!
+<p *ngIf="userName">
+  Student's name is: {{ userName }}
 </p>
+<ul>
+  <li *ngFor="let i of array">{{ i }}</li>
+</ul>
